@@ -1,5 +1,7 @@
 package ru.deathkiller2009;
 
+import ru.deathkiller2009.factories.SkeletonFactory;
+
 /**
  * Hello world!
  *
@@ -8,6 +10,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        GameSession gameSession = new GameSession();
+        gameSession.start(20, 20);
     }
 }
